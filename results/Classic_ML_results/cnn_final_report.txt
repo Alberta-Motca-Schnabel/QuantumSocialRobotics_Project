@@ -1,0 +1,22 @@
+=== FINAL REPORT (CNN) ===
+
+Accuracy:    0.8537
+Precision:   0.8545
+Recall:      0.8537
+F1 Weighted: 0.8539
+F1 Macro:    0.8656
+
+DETAILED CLASSIFICATION REPORT 
+              precision    recall  f1-score   support
+
+       Angry       0.82      0.85      0.84       958
+     Disgust       0.95      1.00      0.97       111
+        Fear       0.80      0.81      0.80      1024
+       Happy       0.95      0.91      0.93      1774
+         Sad       0.83      0.83      0.83      1233
+    Surprise       0.77      0.76      0.77      1247
+     Neutral       0.89      0.93      0.91       831
+
+    accuracy                           0.85      7178
+   macro avg       0.86      0.87      0.87      7178
+weighted avg       0.85      0.85      0.85      7178

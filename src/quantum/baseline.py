@@ -117,9 +117,7 @@ def run_pipeline(csv_path):
         # map strings to numbers
         le = LabelEncoder()
         y = le.fit_transform(y_raw)
-        
-        print(f"Classi trovate: {le.classes_} (Mappate in: {np.unique(y)})")
-        
+                
         # Split 80% Train, 20% Test 
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=0.2, random_state=42, stratify=y
@@ -166,7 +164,7 @@ def run_pipeline(csv_path):
 
             # Expressivity
             expr_val = calculate_expressivity(ansatz, NUM_QUBITS)
-            print(f"Expressivity (KL Divergence): {expr_val:.4f}")
+            print(f"Expressivity: {expr_val:.4f}")
 
             # Construct VQC 
             vqc = construct_qnn(
@@ -178,7 +176,7 @@ def run_pipeline(csv_path):
             )
                     
             # Training
-            print(f"\n Training VQC... (MaxIter={MAX_ITER}, Classes={NUM_CLASSES})")
+            print(f"\n Training VQC (MaxIter={MAX_ITER}, Classes={NUM_CLASSES})")
             start_train_time = time.time()
             vqc.fit(X_train, y_train) 
             train_duration = time.time() - start_train_time
@@ -252,7 +250,7 @@ def run_pipeline(csv_path):
         dict_writer.writeheader()
         dict_writer.writerows(csv_data)
         
-    print(f"\n[{time.strftime('%H:%M:%S')}] Pipeline Completata! Risultati salvati nel file: {output_csv_file}")
+    print(f"\n[{time.strftime('%H:%M:%S')}] Done! Results in: {output_csv_file}")
 
 
 if __name__ == "__main__":

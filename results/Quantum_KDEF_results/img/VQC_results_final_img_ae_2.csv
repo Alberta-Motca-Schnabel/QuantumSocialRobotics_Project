@@ -1,0 +1,5 @@
+Configuration,Train_Accuracy,Train_Precision,Train_Recall,Train_F1,Test_Accuracy,Test_Precision,Test_Recall,Test_F1,Expressivity,Execution_Time_sec,Status
+Config_A,0.1421,0.0202,0.1421,0.0354,0.1416,0.0201,0.1416,0.0351,0.2007,8143.07,Success
+Config_B,0.1432,0.0205,0.1432,0.0359,0.1431,0.0205,0.1431,0.0358,0.2418,3611.38,Success
+Config_C,0.5773,0.6814,0.5773,0.5699,0.5837,0.5982,0.5837,0.573,0.2182,16763.98,Success
+Config_D,0.3565,0.4761,0.3565,0.2643,0.3448,0.4477,0.3448,0.2444,0.2356,11757.47,Success

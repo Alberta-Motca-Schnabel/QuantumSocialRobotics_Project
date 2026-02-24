@@ -1,0 +1,10 @@
+Configuration,Accuracy,Precision,Recall,F1_Score,Expressivity,Execution_Time_sec,Status
+Config_A,0.1718,0.0295,0.1718,0.0504,0.2293,13062.78,Success
+Config_B,0.1158,0.0134,0.1158,0.024,0.2511,6688.09,Success
+Config_C,0.5341,0.5724,0.5341,0.5417,0.167,20510.29,Success
+Config_D,0.2739,0.3785,0.2739,0.2071,0.2435,10858.96,Success
+
+Config A: HRx + MPS_TTN
+Config B: HRx + TensorRing
+Config C: HRyRzCnot + MPS_TTN
+Config D: HRyRzCnot + TensorRing
